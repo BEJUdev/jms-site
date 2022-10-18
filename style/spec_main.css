@@ -74,26 +74,6 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-.custom-shape-divider-bottom-1666021708 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1666021708 svg {
-    position: relative;
-    display: block;
-    width: calc(172% + 1.3px);
-    height: 204px;
-}
-
-.custom-shape-divider-bottom-1666021708 .shape-fill {
-    fill: #FFFFFF;
-}
 a:hover{
     text-decoration: none!important;
 }
