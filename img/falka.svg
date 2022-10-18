@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-falka">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="falka" clip-path="url(#clip-falka)">
+    <path id="Path_2" data-name="Path 2" d="M3053.71,1912.256s186.917-118.985,422.661-9.915,574.666,9.915,574.666,9.915,261.32-93.524,442.662-9.915,461.259,0,461.259,0v85.45h-1920v-65.585Z" transform="translate(-3034.959 -907.791)" fill="#fff"/>
+  </g>
+</svg>

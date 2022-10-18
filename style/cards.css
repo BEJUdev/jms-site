@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'daikonblack';
+    src: url('../fonts/daikon-black-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikon-boldbold';
+    src: url('../fonts/daikon-bold-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonextra_light';
+    src: url('../fonts/daikon-extralight-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonlight';
+    src: url('../fonts/daikon-light-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonmedium';
+    src: url('../fonts/daikon-medium-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'daikon-regularregular';
+    src: url('../fonts/daikon-regular-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonsemi_bold';
+    src: url('../fonts/daikon-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonthin';
+    src: url('../fonts/daikon-thin-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.boxesContainer{
+    height: 800px;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 4% 0 0 4%;
+    perspective: 1200px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    width: 28%;
+}
+
+.cardBox:hover .card {
+    transform: rotateY( 180deg);
+    -webkit-transform: rotateY( 180deg);
+    -moz-transform: rotateY( 180deg);
+    -o-transform: rotateY( 180deg);
+    -ms-transform: rotateY( 180deg);
+}
+
+.card {
+    background: #ffffff;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.20);
+
+}
+
+.card p {
+    margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: #000000;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+}
+
+.card .back {
+    transform: rotateY( 180deg);
+}
+
+.card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+
+.cardBox .card .back {
+    background: white;
+}
+.front img{
+    width: 150px;
+    height: 150px;
+    padding-top: 15px;
+}
+.cardBox .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+.title_card{
+    font-family: daikon-boldbold;
+}
+.des_card{
+    text-align: left;
+    font-size: 16px;
+    font-family: daikonlight;
+
+}
+/*.cardBox:nth-child(1) .des_card{*/
+/*    padding-top: 60px;*/
+/*}*/
+/*.cardBox:nth-child(2) .des_card{*/
+/*    padding-top: 10px;*/
+/*}*/
+/*.cardBox:nth-child(3) .des_card{*/
+/*    padding-top: 0px;*/
+/*}*/
+/*.cardBox:nth-child(4) .des_card{*/
+/*    padding-top: 5px;*/
+/*}*/
+/*.cardBox:nth-child(5) .des_card{*/
+/*    padding-top: 60px;*/
+/*}*/
+/*.cardBox:nth-child(6) .des_card{*/
+/*    padding-top: 30px;*/
+/*}*/
+@-webkit-keyframes giro {
+    from {
+        transform: rotateY( 180deg);
+    }
+    to {
+        transform: rotateY( 0deg);
+    }
+}
+@keyframes giro {
+    from {
+        transform: rotateY( 180deg);
+    }
+    to {
+        transform: rotateY( 0deg);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cardBox {
+        margin-left: 2.8%;
+        margin-top: 3%;
+        width: 46%;
+    }
+    .card {
+        height: 350px;
+    }
+    .cardBox:last-child {
+        margin-bottom: 3%;
+    }
+    .boxesContainer{
+        height: 1200px;
+    }
+    .front img{
+        width: 170px;
+        height: 170px;
+        padding-top: 15px;
+        margin-top: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .cardBox {
+        width: 94.5%;
+    }
+    .card {
+        height: 350px;
+    }
+    .boxesContainer{
+        height: 2200px;
+    }
+    .front img{
+        width: 170px;
+        height: 170px;
+        padding-top: 15px;
+        margin-top: 30px;
+        margin-top: 30px;
+    }
+}

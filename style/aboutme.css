@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'daikonblack';
+    src: url('../fonts/daikon-black-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikon-boldbold';
+    src: url('../fonts/daikon-bold-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonextra_light';
+    src: url('../fonts/daikon-extralight-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonlight';
+    src: url('../fonts/daikon-light-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonmedium';
+    src: url('../fonts/daikon-medium-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'daikon-regularregular';
+    src: url('../fonts/daikon-regular-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonsemi_bold';
+    src: url('../fonts/daikon-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daikonthin';
+    src: url('../fonts/daikon-thin-webfont.woff2') format('woff2'),
+    url('../fonts/daikon-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.aboutme {
+
+    background: rgb(255, 255, 255);
+    color: #ffffff;
+    position: relative;
+    z-index: -1;
+    margin: 12vh 0 20vh 0;
+
+}
+
+.aboutme:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-2deg);
+    transform-origin: 100%;
+    z-index: -1;
+    height: 55vh;
+    box-shadow: 0 0 30px 60px rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231);
+}
+.aboutme_des{
+    margin: 5px 10vh 2vh 5vh;
+    padding: 2vh 15vh 5vh 15vh;
+    text-align: center;
+    font-family: "daikon-regularregular";
+    font-size: 20px;
+}
+@media screen and (max-width: 1300px) {
+    .aboutme {
+    }
+    .aboutme:after {
+        height: 400px;
+        padding-top: 100px;
+    }
+    .aboutme_des {
+        margin: 10px 0 0 0 !important;
+        padding: 0 20px 0 20px !important;
+        text-align: center;
+        height: auto;
+    }
+}
